@@ -27,11 +27,11 @@ def write_header():
         f"# {header[las]}"
         f"#### {author[las]} (1.1.0.20211105)"
         st.warning(header_warning[las])
-    with r1c2:
-        if las == 0:
-            st.image("buyme.png",width=100,caption="打赏流老湿")
-        else:
-            st.image("buyme.png",width=100,caption="Buy me Coffee")
+    # with r1c2:
+    #     if las == 0:
+    #         st.image("buyme.png",width=100,caption="打赏流老湿")
+    #     else:
+    #         st.image("buyme.png",width=100,caption="Buy me Coffee")
         
 if page == p_names[las][0]:
     write_header()
