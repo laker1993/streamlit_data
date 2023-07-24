@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 
 # 展示文本；文本直接使用Markdown语法
 st.markdown("# LTV计算器demo")
