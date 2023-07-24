@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt
+# from matplotlib import pyplot as plt
 
 # 展示文本；文本直接使用Markdown语法
 st.markdown("# LTV计算器demo")
@@ -59,15 +59,17 @@ st.write("LT预估为：", np.sum(rat_predict))
 st.write("LTV预估为：", np.sum(rat_predict)*arpu)
 
 
-x = range(0,need_days-1)
-y2 = list(rat_predict)
+# x = range(0,need_days-1)
+# y2 = list(rat_predict)
 
-plt.figure(figsize=(10,5))
-plt.plot(x, y2, color='pink', marker='^', linewidth=2, label='predict')
+# plt.figure(figsize=(10,5))
+# plt.plot(x, y2, color='pink', marker='^', linewidth=2, label='predict')
 
-plt.title('rat_predict')
-plt.xlabel('days')  
-plt.ylabel('rat')
-plt.legend()
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
+# plt.title('rat_predict')
+# plt.xlabel('days')  
+# plt.ylabel('rat')
+# plt.legend()
+# st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.pyplot()
+
+# 怎么在github 使用 matplotlib
