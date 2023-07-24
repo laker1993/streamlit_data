@@ -6,6 +6,8 @@ st.set_page_config(page_title="Streamlit Experience",layout="wide")
 st.session_state.la_s = 0
 langs = ("简体中文","English","Русский")
 
+st.markdown("# 找段代码试一下部署应用")
+
 # Sidebar
 lang_select = st.sidebar.radio("请选择语言 Please Select Your Language",langs)
 if lang_select == "简体中文":
