@@ -25,7 +25,7 @@ rat=[sec_ret,third_ret,four_ret,five_ret]
 
 # scipy的curve_fit函数进行曲线拟合,模型为指数衰减模型
 # pkg和day为1-3的数据作为已知xdata和ydata,进行曲线拟合,然后基于得到的模型参数预测1-30天的留存率
-from scipy.optimize import curve_fit
+from optimize import curve_fit
 import numpy as np
 
 def fit_retention(sub_df):
