@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from matplotlib import pyplot as plt
+# import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
 
