@@ -1,5 +1,3 @@
-pip install matplotlib
-pip install pandas
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -106,19 +104,19 @@ table['cumulative_ltv'] = table['cumulative_ltv'].round(6)
 # print(table)
 st.dataframe(table,900,527)  # Same as st.write(df)
 
-# 绘制留存率和LTV图例
-fig, ax1 = plt.subplots()
-ax2 = ax1.twinx()
+# # 绘制留存率和LTV图例
+# fig, ax1 = plt.subplots()
+# ax2 = ax1.twinx()
 
 
-# plt.figure(figsize=(10,5))
-ax1.plot(x, y1, color='#1172D2', marker='^', linewidth=2, label='retention_rate')
-ax2.plot(x, y2, color='#0A3447', marker='x', linewidth=2, label='cumulative_ltv')
+# # plt.figure(figsize=(10,5))
+# ax1.plot(x, y1, color='#1172D2', marker='^', linewidth=2, label='retention_rate')
+# ax2.plot(x, y2, color='#0A3447', marker='x', linewidth=2, label='cumulative_ltv')
 
-plt.title('retention_rate and ltv')
-plt.xlabel('retention_days')  
-plt.ylabel('retention_rate and ltv')
-ax1.legend()
-ax2.legend()
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot()
+# plt.title('retention_rate and ltv')
+# plt.xlabel('retention_days')  
+# plt.ylabel('retention_rate and ltv')
+# ax1.legend()
+# ax2.legend()
+# st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.pyplot()
