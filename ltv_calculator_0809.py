@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-# import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import numpy as np
 
@@ -61,8 +60,6 @@ st.write("LT预估为：",  format_str.format(np.sum(rat_predict)))
 st.write("LTV预估为：",  format_str.format(np.sum(rat_predict)*arpu))
 st.write("ROI预估为：",  format_str.format(np.sum(rat_predict)*arpu/cac))
 
-# import pyplot form matplotlib as plt
-
 x = range(1,need_days)
 y1 = list(rat_predict)
 
@@ -79,7 +76,6 @@ def cumulative_sum(values):
 y2 = cumulative_sum(list(rat_predict*arpu)) #需要计算累计LTV
 
 
-
 # 显示可交互数据帧
 columns = ['retention_days','rate','cumulative_ltv']
 dates = x # 留存日期数据
@@ -89,7 +85,6 @@ cumulative_ltv = y2 # 累计LTV数据
 # # 定义格式化函数 
 # def format_decimal(col, digits=2):
 #     return '{{:{}.{}f}}'.format(col, digits)
-
 
 table = pd.DataFrame({
     'retention_days': dates,
@@ -107,7 +102,6 @@ st.dataframe(table,900,527)  # Same as st.write(df)
 # # 绘制留存率和LTV图例
 # fig, ax1 = plt.subplots()
 # ax2 = ax1.twinx()
-
 
 # # plt.figure(figsize=(10,5))
 # ax1.plot(x, y1, color='#1172D2', marker='^', linewidth=2, label='retention_rate')
